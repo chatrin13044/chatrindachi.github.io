@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=optional"
+  rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Team 4B Progate</title>
+</head>
+<body>
+  <nav class="header_nav">
+    <div class="layout">
+      <div class="topnav flow-content" id="myTopnav">
+        <div class="header-left">
+          <i
+          ><b><a href="#home" class="active">TEAM 4B</a></b></i
+          >
+        </div>
+        <div class="header-right">
+          <b><a href="#home">Home</a></b>
+          <b><a href="#profile">Profile</a></b>
+          <b><a href="#contact">Contact</a></b>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="slideshow-container" align="center">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="images/clarence.jpeg" style="width:30%">
+        <div class="text">Clarence</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/chatrin.jpeg" style="width:30%">
+        <div class="text">Chatrin Putri Serani Dachi</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/cheva.jpeg" style="width:30%">
+        <div class="text">Cheva Yudha Gautama</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/prili.jpeg" style="width:30%">
+        <div class="text">Baiq Tria Priliyanti</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/fatika.jpeg" style="width:30%">
+        <div class="text">Cindy Fatika Alwan</div>
+      </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</header>
+
+<main>
+  <section id="home">
+    <div class="layout layout-padding">
+      <h2>Top Part (Hero)</h2>
+    </div>
+  </section>
+  <section id="profile">
+    <div class="profile layout layout-padding">
+      <h2>Profil Tim 4B</h2>
+
+      <div class="cards">
+        <div class="card">
+          <figure class="card__img">
+            <img src="images/clarence.jpeg" alt="Clarence" />
+            <div class="card__captwrap">
+              <figcaption class="card__caption">
+                <h3>Clarence</h3>
+                <p>Institut Teknologi Sepuluh Nopember</p>
+                <p class="card__dom">Surabaya</p>
+                <a
+                class="card__social"
+                href="https://www.instagram.com/theodorusclarence/"
+                >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </figcaption>
+          </div>
+        </figure>
+      </div>
+      <div class="card">
+        <figure class="card__img">
+          <img src="images/chatrin.jpeg" alt="Chatrin" />
+          <div class="card__captwrap">
+            <figcaption class="card__caption">
+              <h3>Chatrin Putri Serani Dachi</h3>
+              <p>Universitas Sarimutiara Indonesia</p>
+              <p class="card__dom">Medan</p>
+              <a
+              class="card__social"
+              href="https://www.instagram.com/Chatrindachi_/"
+              >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+    <div class="card">
+      <figure class="card__img">
+        <img src="images/cheva.jpeg" alt="Cheva" />
+        <div class="card__captwrap">
+          <figcaption class="card__caption">
+            <h3>Cheva Yudha Gautama</h3>
+            <p>Universitas Jember</p>
+            <p class="card__dom">Jember</p>
+            <a
+            class="card__social"
+            href="https://www.instagram.com/chevayudha/"
+            >
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </figcaption>
+      </div>
+    </figure>
+  </div>
+  <div class="card">
+    <figure class="card__img">
+      <img src="images/prili.jpeg" alt="Prili" />
+      <div class="card__captwrap">
+        <figcaption class="card__caption">
+          <h3>Baiq Tria Priliyanti</h3>
+          <p>Universitas Islam Indonesia</p>
+          <p class="card__dom">Lombok</p>
+          <a
+          class="card__social"
+          href="https://www.instagram.com/Prilili__/"
+          >
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </figcaption>
+    </div>
+  </figure>
+</div>
+<div class="card">
+  <figure class="card__img">
+    <img src="images/fatika.jpeg" alt="Fatika" />
+    <div class="card__captwrap">
+      <figcaption class="card__caption">
+        <h3>Cindy Fatika Alwan</h3>
+        <p>Sekolah Tinggi Teknologi Wastukancana</p>
+        <p class="card__dom">Purwakarta</p>
+        <a
+        class="card__social"
+        href="https://www.instagram.com/progateID/"
+        >
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+    </figcaption>
+  </div>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer id="contact">
+  <ul class="social_icon">
+    <li>
+      <a href="https://www.facebook.com/ProgateID/">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/progateID">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/progateID/">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+    </li>
+  </ul>
+  <ul class="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <p class="copyright">©2021 Team 4B</p>
+</footer>
+<script
+type="module"
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+nomodule
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+</body>
+</html>
